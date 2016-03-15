@@ -1,0 +1,91 @@
+<div class="dlog-bg">
+	<div class="ui-dialog-content rg-h130 rg-overflow">
+		<div class="line clearfix" data-dojo-attach-point="tel">
+      <div class="grid_2 first column phone">
+        <!-- <label>Telephone:</label> -->
+      </div>
+      <div class="column grid_6 last">
+        <div class="clearfix">
+          <div class="column first rg-fs14 mt10 mb20">
+          	<span>${i18n.phoneNum}</span>
+          </div>
+        </div>
+        <div data-dojo-attach-point='phone'>
+          <input data-dojo-attach-point="numArea" class="phone-area" type="text" readonly="true" value="+1" /><input data-dojo-attach-point="telphone" class="phone-input"  type="text" />
+        </div>
+
+        <div class="phone-div">
+          <ul class="phone-list rg-h83 pt-a" style="display:none;" data-dojo-attach-point="numList">
+            <li data-dojo-attach-point="num-1">&emsp;&ensp;+1 -  United States</li>
+            <li data-dojo-attach-point="num-2">&emsp;&ensp;+1 -  Canada</li>
+            <li data-dojo-attach-point="num-3">&emsp;+31 -  Netherlands</li>
+            <li data-dojo-attach-point="num-4">&emsp;+32 -  Belgium</li>
+            <li data-dojo-attach-point="num-5">&emsp;+33 -  France</li>
+            <li data-dojo-attach-point="num-6">&emsp;+34 -  Spain</li>
+            <li data-dojo-attach-point="num-7">&emsp;+43 -  Austria</li>
+            <li data-dojo-attach-point="num-8">&emsp;+44 -  United Kingdom</li>
+            <li data-dojo-attach-point="num-9">&emsp;+45 -  Denmark</li>
+            <li data-dojo-attach-point="num-10">&emsp;+46 -  Sweden</li>
+            <li data-dojo-attach-point="num-11">&emsp;+49 -  Germany</li>
+            <li data-dojo-attach-point="num-12">&emsp;+52 -  Mexico</li>
+            <li data-dojo-attach-point="num-13">&emsp;+55 -  Brazil</li>
+            <li data-dojo-attach-point="num-14">&emsp;+61 -  Australia</li>
+            <li data-dojo-attach-point="num-15">&emsp;+64 -  New Zealand</li>
+            <li data-dojo-attach-point="num-16">&emsp;+82 -  Korea, Republic Of</li>
+            <li data-dojo-attach-point="num-17">&emsp;+86 -  China</li>
+            <li data-dojo-attach-point="num-18">&emsp;&emsp;&emsp;-  Others</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="line clearfix" data-dojo-attach-point="ema">
+      <div class="grid_2 first column laptop">
+        <!-- <label>Email:</label> -->
+      </div>
+      <div class="column grid_6 last">
+        <div class="clearfix">
+          <div class="column first rg-fs14">
+          	<span>${i18n.emailAdress}</span>
+          </div>
+        </div>
+        <div class="line clearfix">
+          <div class="column first">
+          	<input class='guest-input' type="text" data-dojo-attach-point="email">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="line clearfix" data-dojo-attach-point="twi">
+      <div class="grid_2 first column twitter">
+        <!-- <label>Twitter:</label> -->
+      </div>
+      <div class="column grid_6 last">
+        <div class="clearfix">
+          <div class="column first rg-fs14">
+          	<span>${i18n.twitterUserName}</span>
+          </div>
+        </div>
+        <div class="line clearfix">
+          <div class="column first">
+            <label>@</label>
+          </div>
+          <div class="column first">
+          	<input type="text" data-dojo-attach-point="twitter">
+          </div>
+        </div>
+      </div>
+      <div class="line clearfix">
+        <div class="column first">
+          <span>${i18n.receiveKey}</span>
+        </div>
+      </div>
+    </div>
+
+	</div>
+	<div class="dlog-bottom pt-r clearfix">
+			<button class="btn btn-small btn-cancel" data-dojo-attach-point="closeDialog">${i18n.cancel}</button>
+			<button class="btn btn-small btn-primary fn-right"  data-dojo-attach-point="send">${i18n.send}</button>
+	</div>
+</div>

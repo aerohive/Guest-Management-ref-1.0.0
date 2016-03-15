@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<script src="base.js" ></script>
+<script src="error.js" ></script>
+<script src="string.js" ></script>
+<script src="asserts.js" ></script>
+<script src="array.js" ></script>
+<script src="useragent.js" ></script>
+<script src="browserfeature.js" ></script>
+<script src="tagname.js" ></script>
+<script src="classes.js" ></script>
+<script src="math.js" ></script>
+<script src="coordinate.js" ></script>
+<script src="size.js" ></script>
+<script src="object.js" ></script>
+<script src="dom.js" ></script>
+<script src="json.js" ></script>
+<script src="descriptor.js" ></script>
+<script src="util.js" ></script>
+<script src="fielddescriptor.js" ></script>
+<script src="message.js" ></script>
+<script src="serializer.js" ></script>
+<script src="objectserializer.js" ></script>
+<script src="stringbuffer.js" ></script>
+
+<script src="phonemetadata.pb.js" ></script>
+<script src="phonenumber.pb.js" ></script>
+<script src="metadata.js" ></script>
+<script src="phonenumberutil.js" ></script>
+
+<!-- <script src="lazydeserializer.js" ></script>
+<script src="pbliteserializer.js" ></script> -->
+<script src="asyoutypeformatter.js" ></script>
+</head>
+
+<style>
+
+</style>
+
+<script>
+window.onload = function(){
+	var oPhone = document.getElementById('phone');
+	oPhone.onclick = function(){
+		console.log( validatePhoneAndCountryCode('13355323356', '+86') );
+	}
+
+	var allData = [
+{'sname':'AF','name':'Afghanistan','value':'93'},
+{'sname':'AX','name':'Aland Islands','value':'358'},
+{'sname':'AL','name':'Albania','value':'355'},
+{'sname':'DZ','name':'Algeria','value':'213'},
+{'sname':'AS','name':'American Samoa','value':'684'},
+{'sname':'AD','name':'Andorra','value':'376'},
+{'sname':'AO','name':'Angola','value':'244'},
+{'sname':'AI','name':'Anguilla','value':'1264'},
+{'sname':'AQ','name':'Antarctica','value':'672'},
+{'sname':'AG','name':'Antigua And Barbuda','value':'1268'},
+{'sname':'AR','name':'Argentina','value':'54'},
+{'sname':'AM','name':'Armenia','value':'374'},
+{'sname':'AW','name':'Aruba','value':'297'},
+{'sname':'AU','name':'Australia','value':'61'},
+{'sname':'AT','name':'Austria','value':'43'},
+{'sname':'AZ','name':'Azerbaijan','value':'994'},
+{'sname':'BS','name':'Bahamas','value':'1242'},
+{'sname':'BH','name':'Bahrain','value':'973'},
+{'sname':'BD','name':'Bangladesh','value':'880'},
+{'sname':'BB','name':'Barbados','value':'1246'},
+{'sname':'BY','name':'Belarus','value':'375'},
+{'sname':'BE','name':'Belgium','value':'32'},
+{'sname':'BZ','name':'Belize','value':'501'},
+{'sname':'BJ','name':'Benin','value':'229'},
+{'sname':'BM','name':'Bermuda','value':'1441'},
+{'sname':'BT','name':'Bhutan','value':'975'},
+{'sname':'BO','name':'Bolivia','value':'591'},
+{'sname':'BA','name':'Bosnia And Herzegovina','value':'387'},
+{'sname':'BW','name':'Botswana','value':'267'},
+{'sname':'BR','name':'Brazil','value':'55'},
+{'sname':'IO','name':'British Indian Ocean Territory','value':'246'},
+{'sname':'BN','name':'Brunei Darussalam','value':'673'},
+{'sname':'BG','name':'Bulgaria','value':'359'},
+{'sname':'BF','name':'Burkina Faso','value':'226'},
+{'sname':'BI','name':'Burundi','value':'257'},
+{'sname':'KH','name':'Cambodia','value':'855'},
+{'sname':'CM','name':'Cameroon','value':'237'},
+{'sname':'CA','name':'Canada','value':'1'},
+{'sname':'CV','name':'Cape Verde','value':'238'},
+{'sname':'KY','name':'Cayman Islands','value':'1345'},
+{'sname':'CF','name':'Central African Republic','value':'236'},
+{'sname':'TD','name':'Chad','value':'235'},
+{'sname':'CL','name':'Chile','value':'56'},
+{'sname':'CN','name':'China','value':'86'},
+{'sname':'CX','name':'Christmas Island','value':'61'},
+{'sname':'CC','name':'Cocos (keeling) Islands','value':'61'},
+{'sname':'CO','name':'Colombia','value':'57'},
+{'sname':'KM','name':'Comoros','value':'269'},
+{'sname':'CG','name':'Congo','value':'242'},
+{'sname':'CD','name':'Congo, The Democratic Republic Of The','value':'243'},
+{'sname':'CK','name':'Cook Islands','value':'682'},
+{'sname':'CR','name':'Costa Rica','value':'506'},
+{'sname':'CI','name':'Cote D\'ivoire','value':'225'},
+{'sname':'HR','name':'Croatia','value':'385'},
+{'sname':'CU','name':'Cuba','value':'53'},
+{'sname':'CY','name':'Cyprus','value':'357'},
+{'sname':'CZ','name':'Czech Republic','value':'420'},
+{'sname':'DK','name':'Denmark','value':'45'},
+{'sname':'DJ','name':'Djibouti','value':'253'},
+{'sname':'DM','name':'Dominica','value':'1767'},
+{'sname':'DO','name':'Dominican Republic','value':'1809'},
+{'sname':'EC','name':'Ecuador','value':'593'},
+{'sname':'EG','name':'Egypt','value':'20'},
+{'sname':'SV','name':'El Salvador','value':'503'},
+{'sname':'GQ','name':'Equatorial Guinea','value':'240'},
+{'sname':'ER','name':'Eritrea','value':'291'},
+{'sname':'EE','name':'Estonia','value':'372'},
+{'sname':'ET','name':'Ethiopia','value':'251'},
+{'sname':'FK','name':'Falkland Islands (malvinas)','value':'500'},
+{'sname':'FO','name':'Faroe Islands','value':'298'},
+{'sname':'FJ','name':'Fiji','value':'679'},
+{'sname':'FI','name':'Finland','value':'358'},
+{'sname':'FR','name':'France','value':'33'},
+{'sname':'GF','name':'French Guiana','value':'594'},
+{'sname':'PF','name':'French Polynesia','value':'689'},
+{'sname':'GA','name':'Gabon','value':'241'},
+{'sname':'GM','name':'Gambia','value':'220'},
+{'sname':'GE','name':'Georgia','value':'995'},
+{'sname':'DE','name':'Germany','value':'49'},
+{'sname':'GH','name':'Ghana','value':'233'},
+{'sname':'GI','name':'Gibraltar','value':'350'},
+{'sname':'GR','name':'Greece','value':'30'},
+{'sname':'GL','name':'Greenland','value':'299'},
+{'sname':'GD','name':'Grenada','value':'1473'},
+{'sname':'GP','name':'Guadeloupe','value':'590'},
+{'sname':'GU','name':'Guam','value':'1671'},
+{'sname':'GT','name':'Guatemala','value':'502'},
+{'sname':'GG','name':'Guernsey','value':'44'},
+{'sname':'GN','name':'Guinea','value':'224'},
+{'sname':'GW','name':'Guinea-bissau','value':'245'},
+{'sname':'GY','name':'Guyana','value':'592'},
+{'sname':'HT','name':'Haiti','value':'509'},
+{'sname':'HN','name':'Honduras','value':'504'},
+{'sname':'HK','name':'Hong Kong','value':'852'},
+{'sname':'HU','name':'Hungary','value':'36'},
+{'sname':'IS','name':'Iceland','value':'354'},
+{'sname':'IN','name':'India','value':'91'},
+{'sname':'ID','name':'Indonesia','value':'62'},
+{'sname':'IR','name':'Iran, Islamic Republic Of','value':'98'},
+{'sname':'IQ','name':'Iraq','value':'964'},
+{'sname':'IE','name':'Ireland','value':'353'},
+{'sname':'IM','name':'Isle Of Man','value':'44'},
+{'sname':'IL','name':'Israel','value':'972'},
+{'sname':'IT','name':'Italy','value':'39'},
+{'sname':'JM','name':'Jamaica','value':'1876'},
+{'sname':'JP','name':'Japan','value':'81'},
+{'sname':'JE','name':'Jersey','value':'44'},
+{'sname':'JO','name':'Jordan','value':'962'},
+{'sname':'KZ','name':'Kazakhstan','value':'7'},
+{'sname':'KE','name':'Kenya','value':'254'},
+{'sname':'KI','name':'Kiribati','value':'686'},
+{'sname':'KP','name':'Korea, Democratic People\'s Republic Of','value':'850'},
+{'sname':'KR','name':'Korea, Republic Of','value':'82'},
+{'sname':'KW','name':'Kuwait','value':'965'},
+{'sname':'KG','name':'Kyrgyzstan','value':'996'},
+{'sname':'LA','name':'Lao People\'s Democratic Republic','value':'856'},
+{'sname':'LV','name':'Latvia','value':'371'},
+{'sname':'LB','name':'Lebanon','value':'961'},
+{'sname':'LS','name':'Lesotho','value':'266'},
+{'sname':'LR','name':'Liberia','value':'231'},
+{'sname':'LY','name':'Libyan Arab Jamahiriya','value':'218'},
+{'sname':'LI','name':'Liechtenstein','value':'423'},
+{'sname':'LT','name':'Lithuania','value':'370'},
+{'sname':'LU','name':'Luxembourg','value':'352'},
+{'sname':'MO','name':'Macao','value':'853'},
+{'sname':'MK','name':'Macedonia, The Former Yugoslav Republic Of','value':'389'},
+{'sname':'MG','name':'Madagascar','value':'261'},
+{'sname':'MW','name':'Malawi','value':'265'},
+{'sname':'MY','name':'Malaysia','value':'60'},
+{'sname':'MV','name':'Maldives','value':'960'},
+{'sname':'ML','name':'Mali','value':'223'},
+{'sname':'MT','name':'Malta','value':'356'},
+{'sname':'MH','name':'Marshall Islands','value':'692'},
+{'sname':'MQ','name':'Martinique','value':'596'},
+{'sname':'MR','name':'Mauritania','value':'222'},
+{'sname':'MU','name':'Mauritius','value':'230'},
+{'sname':'YT','name':'Mayotte','value':'262'},
+{'sname':'MX','name':'Mexico','value':'52'},
+{'sname':'FM','name':'Micronesia, Federated States Of','value':'691'},
+{'sname':'MD','name':'Moldova','value':'373'},
+{'sname':'MC','name':'Monaco','value':'377'},
+{'sname':'MN','name':'Mongolia','value':'976'},
+{'sname':'ME','name':'Montenegro','value':'382'},
+{'sname':'MS','name':'Montserrat','value':'1664'},
+{'sname':'MA','name':'Morocco','value':'212'},
+{'sname':'MZ','name':'Mozambique','value':'258'},
+{'sname':'MM','name':'Myanmar','value':'95'},
+{'sname':'NA','name':'Namibia','value':'264'},
+{'sname':'NR','name':'Nauru','value':'674'},
+{'sname':'NP','name':'Nepal','value':'977'},
+{'sname':'NL','name':'Netherlands','value':'31'},
+{'sname':'AN','name':'Netherlands Antilles','value':'599'},
+{'sname':'NC','name':'New Caledonia','value':'687'},
+{'sname':'NZ','name':'New Zealand','value':'64'},
+{'sname':'NI','name':'Nicaragua','value':'505'},
+{'sname':'NE','name':'Niger','value':'227'},
+{'sname':'NG','name':'Nigeria','value':'234'},
+{'sname':'NU','name':'Niue','value':'683'},
+{'sname':'NF','name':'Norfolk Island','value':'672'},
+{'sname':'MP','name':'Northern Mariana Islands','value':'1'},
+{'sname':'NO','name':'Norway','value':'47'},
+{'sname':'OM','name':'Oman','value':'968'},
+{'sname':'PK','name':'Pakistan','value':'92'},
+{'sname':'PW','name':'Palau','value':'680'},
+{'sname':'PS','name':'Palestinian Territory, Occupied','value':'970'},
+{'sname':'PA','name':'Panama','value':'507'},
+{'sname':'PG','name':'Papua New Guinea','value':'675'},
+{'sname':'PY','name':'Paraguay','value':'595'},
+{'sname':'PE','name':'Peru','value':'51'},
+{'sname':'PH','name':'Philippines','value':'63'},
+{'sname':'PL','name':'Poland','value':'48'},
+{'sname':'PT','name':'Portugal','value':'351'},
+{'sname':'PR','name':'Puerto Rico','value':'1809'},
+{'sname':'QA','name':'Qatar','value':'974'},
+{'sname':'RE','name':'Reunion','value':'262'},
+{'sname':'RO','name':'Romania','value':'40'},
+{'sname':'RU','name':'Russian Federation','value':'7'},
+{'sname':'RW','name':'Rwanda','value':'250'},
+{'sname':'BL','name':'Saint BarthElemy','value':'590'},
+{'sname':'SH','name':'Saint Helena','value':'290'},
+{'sname':'KN','name':'Saint Kitts And Nevis','value':'1869'},
+{'sname':'LC','name':'Saint Lucia','value':'1758'},
+{'sname':'MF','name':'Saint Martin','value':'590'},
+{'sname':'PM','name':'Saint Pierre And Miquelon','value':'508'},
+{'sname':'VC','name':'Saint Vincent And The Grenadines','value':'1784'},
+{'sname':'WS','name':'Samoa','value':'685'},
+{'sname':'SM','name':'San Marino','value':'378'},
+{'sname':'ST','name':'Sao Tome And Principe','value':'239'},
+{'sname':'SA','name':'Saudi Arabia','value':'966'},
+{'sname':'SN','name':'Senegal','value':'221'},
+{'sname':'RS','name':'Serbia','value':'381'},
+{'sname':'SC','name':'Seychelles','value':'248'},
+{'sname':'SL','name':'Sierra Leone','value':'232'},
+{'sname':'SG','name':'Singapore','value':'65'},
+{'sname':'SK','name':'Slovakia','value':'421'},
+{'sname':'SI','name':'Slovenia','value':'386'},
+{'sname':'SB','name':'Solomon Islands','value':'677'},
+{'sname':'SO','name':'Somalia','value':'252'},
+{'sname':'ZA','name':'South Africa','value':'27'},
+{'sname':'ES','name':'Spain','value':'34'},
+{'sname':'LK','name':'Sri Lanka','value':'94'},
+{'sname':'SD','name':'Sudan','value':'249'},
+{'sname':'SR','name':'Suriname','value':'597'},
+{'sname':'SJ','name':'Svalbard And Jan Mayen','value':'47'},
+{'sname':'SZ','name':'Swaziland','value':'268'},
+{'sname':'SE','name':'Sweden','value':'46'},
+{'sname':'CH','name':'Switzerland','value':'41'},
+{'sname':'SY','name':'Syrian Arab Republic','value':'963'},
+{'sname':'TW','name':'Taiwan, Province Of China','value':'886'},
+{'sname':'TJ','name':'Tajikistan','value':'992'},
+{'sname':'TZ','name':'Tanzania, United Republic Of','value':'255'},
+{'sname':'TH','name':'Thailand','value':'66'},
+{'sname':'TL','name':'Timor-leste','value':'670'},
+{'sname':'TG','name':'Togo','value':'228'},
+{'sname':'TK','name':'Tokelau','value':'690'},
+{'sname':'TO','name':'Tonga','value':'676'},
+{'sname':'TT','name':'Trinidad And Tobago','value':'1868'},
+{'sname':'TN','name':'Tunisia','value':'216'},
+{'sname':'TR','name':'Turkey','value':'90'},
+{'sname':'TM','name':'Turkmenistan','value':'993'},
+{'sname':'TC','name':'Turks And Caicos Islands','value':'1649'},
+{'sname':'TV','name':'Tuvalu','value':'688'},
+{'sname':'UG','name':'Uganda','value':'256'},
+{'sname':'UA','name':'Ukraine','value':'380'},
+{'sname':'AE','name':'United Arab Emirates','value':'971'},
+{'sname':'GB','name':'United Kingdom','value':'44'},
+{'sname':'US','name':'United States','value':'1'},
+{'sname':'UY','name':'Uruguay','value':'598'},
+{'sname':'UZ','name':'Uzbekistan','value':'998'},
+{'sname':'VU','name':'Vanuatu','value':'678'},
+{'sname':'VA','name':'Vatican City State','value':'379'},
+{'sname':'VE','name':'Venezuela','value':'58'},
+{'sname':'VN','name':'Viet Nam','value':'84'},
+{'sname':'VG','name':'Virgin Islands','value':'1340'},
+{'sname':'WF','name':'Wallis And Futuna','value':'681'},
+{'sname':'YE','name':'Yemen','value':'967'},
+{'sname':'ZM','name':'Zambia','value':'260'},
+{'sname':'ZW','name':'Zimbabwe','value':'263'}
+    ];
+
+
+	function validatePhoneAndCountryCode(phoneNum,countCode){
+		countCode = countCode.trim();
+		if(countCode.indexOf("+")>=0){
+			countCode = countCode.substring(1);
+		}
+		var result = false;
+		try{
+			var phoneUtil = i18n.phonenumbers.PhoneNumberUtil.getInstance();
+			for(var i=0;i<allData.length;i++){
+				if(countCode == allData[i].value){
+				 	var number = phoneUtil.parseAndKeepRawInput(phoneNum, allData[i].sname);
+				 	result = phoneUtil.isValidNumberForRegion(number,allData[i].sname);
+				 	if(result){
+				 		break;
+				 	}
+				}
+			}
+			}catch(e){
+				return false;
+			}
+		return result;
+	}
+}
+</script>
+
+<body>
+<input type='text' id='phone' />
+</body>
+</html>

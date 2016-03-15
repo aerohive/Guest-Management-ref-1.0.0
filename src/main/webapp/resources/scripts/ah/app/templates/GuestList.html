@@ -1,0 +1,20 @@
+<div>
+	<div class="rg-pt30 clearfix w220 rg-mc0">
+    <div class="img-guestTitle fn-left"></div>
+    <div class="ml5 fn-left">
+      <h2>${i18n.guestList}</h2>
+      <p class="font-line">${i18n.searchViewGuest}</p>
+    </div>
+  </div>
+  <div data-dojo-attach-point="searchArea">
+		<div class="ui-search fn-inline-block pt-r">
+			<input type="text" placeholder="Search Guest Log" data-dojo-attach-point="filterText" maxlength="32">
+		</div>
+	</div>
+	<div data-dojo-attach-point="guestList" data-dojo-type="ah/util/form/Dgrid" data-dojo-props="target: this._target, columns: this.__structure, plugins: {'select': true}, allowSelectAll : true,	actionArea: 'resend,speRemove', autoHeight:'130px', param: {}"></div>
+
+	<div class="ta-c rg-mt70">
+		<span class="img-back rg-w35 rg-h35 rg-mt" data-dojo-attach-point="back"></span>
+		<p class="rg-back">${i18n.back}</p>
+	</div>
+</div>

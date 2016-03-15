@@ -1,0 +1,52 @@
+<div class="rg-content">
+  <div class="rg-pt30 clearfix w272 rg-mc0">
+    <div class="img-groupTitle fn-left"></div>
+    <div class="ml5 fn-left">
+      <h2>${i18n.registerGroup}</h2>
+      <p class="rg-fs14">${i18n.uploadOrEnterGroupGuests}</p>
+    </div>
+  </div>
+
+  <div class='rg-h206'>
+    <div class="rg-ml150">
+      <div>
+        <label class="label-rqe rg-fs20">${i18n.purpose}</label>
+      </div>
+      <div class="rg-w270 mt5">
+        <input type="text" class="guest-input" ah-permit="purpose" data-dojo-attach-point="purpose" />
+      </div>
+    </div>
+
+    <div class="mt10 clearfix ta-c">
+      <!-- <div class="fn-left rg-w270" data-dojo-attach-point="upload">
+        <img src="${host}/resources/images/uploadsheet.png" data-dojo-attach-point="uploadFile">
+  			<p class='rg-fs20'>Upload a spreadsheet</p>
+      </div> -->
+      <div class="fn-left rg-w270 rg-ml140" data-dojo-attach-point="manual">
+        <img src="${host}/resources/images/groupmanual.png" data-dojo-attach-point="enterManual">
+  			<p class='rg-fs20'>${i18n.enterGuestManually}</p>
+      </div>
+    </div>
+
+      <div data-dojo-attach-point="test" class="fn-left rg-ml135 rg-w540 rg-h148 clearfix" style="display:none;">
+        <div class="group-file fn-left"></div>
+        <div data-dojo-attach-point="uploadtest">
+          <p class='rg-fs14 mt10'><a href="#">${i18n.downloadExampleTemplate}</a></p>
+          <p class='rg-fs14 mt10'>${i18n.chooseNextEnterGuestManually}</p>
+        </div>
+      </div>
+      <span data-dojo-attach-point="file"></span>
+
+  </div>
+
+  <div class="ta-c">
+    <span class="img-next rg-w60 rg-h60" data-dojo-attach-point="next"></span>
+    <p class="rg-fs20 rg-mc0">${i18n.next}</p>
+  </div>
+
+  <div class="ta-l">
+    <span class="img-back rg-w35 rg-h35" data-dojo-attach-point="back"></span>
+    <p class="rg-back">${i18n.back}</p>
+  </div>
+
+</div>

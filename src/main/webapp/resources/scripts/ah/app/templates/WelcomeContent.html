@@ -1,0 +1,26 @@
+<div>
+    <div id="autoRedirectMsgDiv" class="mt30 clearfix w410 rg-mc0">
+        <!--<div class="img-guestTitle fn-left"></div>-->
+        <div class="ml5 mt5 ta-c">
+            <p id="autoRedirectMsg" class="rg-fs20">Submit Passcode to begin using Kiosk</p>
+        </div>
+    </div>
+
+    <div id="kioskForm">
+        <div class="lg-margin">
+            <div class="mt10">
+                <form name="kioskForm" action="/guestmgmt-ref/oauth/login/kiosk" method="POST" onsubmit="return false;">
+                    <div class="lg-label rg-mc0">Passcode</div>
+                    <input type="password" class="rg-h35 w310 lg-input" ah-permit="name" data-dojo-attach-point="passcode" />
+                </form>
+            </div>
+        </div>
+
+        <div class="ta-c">
+            <label id="authErrorMsg" class="hiddenMsg">Passcode for kiosk is wrong.</label>
+            <span class="img-next rg-w60 rg-h60" data-dojo-attach-point="loginBtn"></span>
+            <p class="rg-fs20">Submit</p>
+        </div>
+    </div>
+</div>
+

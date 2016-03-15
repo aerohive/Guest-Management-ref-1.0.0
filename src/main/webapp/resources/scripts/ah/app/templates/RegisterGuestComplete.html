@@ -1,0 +1,37 @@
+<div class="rg-content">
+	<div class="mt10 clearfix rg-w290 rg-mc0">
+		<div class="img-guestTitle fn-left"></div>
+		<div class="ml5 mt5 fn-left">
+			<h2>${i18n.registerAsGuest}</h2>
+			<p class="rg-fs14">${i18n.accessKeyCreated}</p>
+		</div>
+	</div>
+
+	<div class="mt40 ta-c">
+		<div data-dojo-attach-point="wifi">
+			<span class="guest-name rg-h35">${i18n.wifiNet}&nbsp;</span>
+			<span class="guest-value rg-h35" data-dojo-attach-point="wifiNet"></span>
+		</div>
+
+		<div data-dojo-attach-point="login">
+			<span class="guest-name rg-h35">${i18n.loginName}&nbsp;</span>
+			<span class="guest-value rg-h35" data-dojo-attach-point="loginName"></span>
+		</div>
+
+		<div data-dojo-attach-point="pwd">
+			<span class="guest-name rg-h35">${i18n.password}&nbsp;</span>
+			<span class="guest-value rg-h35" data-dojo-attach-point="password"></span>
+		</div>
+		<p class="guest-note fn-left ta-c" data-dojo-attach-point="note"></p>
+
+		<div class="guest-note fn-left ta-c"><a href="javascript:void(0);" data-dojo-attach-point="sendInfo">${i18n.sendNotify}</a></div>
+	</div>
+
+	<div class="ta-c fn-left rg-mt70 rg-ml300">
+		<span class="img-next rg-w60 rg-h60" data-dojo-attach-point="complete"></span>
+		<p class="rg-fs20">${i18n.complete}</p>
+	</div>
+</div>
+
+
+

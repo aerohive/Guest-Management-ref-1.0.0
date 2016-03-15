@@ -1,0 +1,551 @@
+.top-title{
+	border-bottom: solid 1px #c5c5c5;
+	padding-bottom: 7px;
+}
+
+.device-type .current, .device-type .current:hover{
+	color: #a39c97;
+	cursor: default;
+}
+
+.qos-input {
+	width: 40px;
+	text-align: center;
+	height: 31px;
+	margin-bottom: 4px !important;
+}
+
+.firewall-border {
+	background-color: #B0B0B0;
+	border-top: 0px;
+	border-bottom: 0px;
+	margin: 0px 0;
+	margin-top: 17px;
+}
+
+.widget-toolbar:before {
+	border-right: 0px solid;
+}
+.large-close-x-button {
+	float: right;
+	height: 18px;
+	width: 18px;
+	background-color: #D1CEc3;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 5px;
+	vertical-align: middle;
+	padding-right: 1px;
+}
+.user-profile-sprite-icons {
+	background: url(../../images/common/sprite/icons.png) no-repeat -150px -150px;
+	display: inline-block;
+}
+.userprofile-close_x{ background-position: -200px -150px; width: 9px; height: 9px; }
+
+.userprofile-close_x-while{ background-position: -150px -150px; width: 9px; height: 9px; }
+/*
+.ah-tab-selected {
+	border: 1px solid #b5bcc7;
+	top: 1px;
+	margin-right: 5px;
+	padding: 10px 10px;
+	border-bottom-width: 0;
+	min-width: 60px;
+	text-align: center;
+	cursor: pointer;
+}
+*/
+
+/********Just put this now, accroding to feature, move it to common************/
+.tran-wrap{
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-perspective-origin: 50% 200%;
+	-moz-perspective-origin: 50% 200%;
+	-ms-perspective-origin: 50% 200%;
+	perspective-origin: 50% 200%;
+}
+
+
+.anim-in {
+	-webkit-animation: AnimIn 0.3s linear forwards;
+	-moz-animation: AnimIn 0.3s linear forwards;
+	-ms-animation: AnimIn 0.3s linear forwards;
+	animation: AnimIn 0.3s linear forwards;
+}
+
+@-webkit-keyframes AnimIn {
+	0% {
+		/*-webkit-transform: translateZ(-500px) rotateY(0deg);*/
+		opacity: 0;
+	}
+	20% {
+		/*-webkit-transform: translateZ(-250px) rotateY(30deg);*/
+		opacity: 0.5;
+	}
+	100% {
+		/*-webkit-transform: translateZ(0px) rotateY(0deg);*/
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes AnimIn {
+	0% {
+		/*-webkit-transform: translateZ(-500px) rotateY(0deg);*/
+		opacity: 0;
+	}
+	20% {
+		/*-webkit-transform: translateZ(-250px) rotateY(30deg);*/
+		opacity: 0.5;
+	}
+	100% {
+		/*-webkit-transform: translateZ(0px) rotateY(0deg);*/
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes AnimIn {
+	0% {
+		/*-webkit-transform: translateZ(-500px) rotateY(0deg);*/
+		opacity: 0;
+	}
+	20% {
+		/*-webkit-transform: translateZ(-250px) rotateY(30deg);*/
+		opacity: 0.5;
+	}
+	100% {
+		/*-webkit-transform: translateZ(0px) rotateY(0deg);*/
+		opacity: 1;
+	}
+}
+
+.anim-out {
+	-webkit-animation: AnimOut 0.4s linear forwards;
+	-moz-animation: AnimOut 0.4s linear forwards;
+	-ms-animation: AnimOut 0.4s linear forwards;
+	animation: AnimOut 0.4s linear forwards;
+}
+@-webkit-keyframes AnimOut {
+	50% {
+		/*-webkit-transform: translateZ(-250px) rotateY(30deg);*/
+	}
+	75% {
+		/*-webkit-transform: translateZ(-372.5px) rotateY(15deg);*/
+		opacity: .5;
+	}
+	100% {
+		/*-webkit-transform: translateZ(-500px) rotateY(0deg);*/
+		opacity: 0;
+	}
+}
+@-moz-keyframes AnimOut {
+	50% {
+		/*-webkit-transform: translateZ(-250px) rotateY(30deg);*/
+	}
+	75% {
+		/*-webkit-transform: translateZ(-372.5px) rotateY(15deg);*/
+		opacity: .5;
+	}
+	100% {
+		/*-webkit-transform: translateZ(-500px) rotateY(0deg);*/
+		opacity: 0;
+	}
+}
+@-ms-keyframes AnimOut {
+	50% {
+		/*-webkit-transform: translateZ(-250px) rotateY(30deg);*/
+	}
+	75% {
+		/*-webkit-transform: translateZ(-372.5px) rotateY(15deg);*/
+		opacity: .5;
+	}
+	100% {
+		/*-webkit-transform: translateZ(-500px) rotateY(0deg);*/
+		opacity: 0;
+	}
+}
+
+.anim-in-line {
+	-webkit-animation: NextAnimIn 0.6s ease forwards;
+	-moz-animation: NextAnimIn 0.6s ease forwards;
+	-ms-animation: NextAnimIn 0.6s ease forwards;
+	animation: NextAnimIn 0.6s ease forwards;
+}
+
+@-webkit-keyframes NextAnimIn {
+	0% {
+		-webkit-transform: translateX(50%);
+		opacity: 0;
+	}
+	100% {
+		-webkit-transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes NextAnimIn {
+	0% {
+		-moz-transform: translateX(50%);
+		opacity: 0;
+	}
+	100% {
+		-moz-transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@-ms-keyframes NextAnimIn {
+	0% {
+		-ms-transform: translateX(50%);
+		opacity: 0;
+	}
+	100% {
+		-ms-transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+.anim-out-line {
+	-webkit-animation: NextAnimOut 0.6s ease forwards;
+	-moz-animation: NextAnimOut 0.6s ease forwards;
+	-ms-animation: NextAnimOut 0.6s ease forwards;
+	animation: NextAnimOut 0.6s ease forwards;
+}
+
+@-webkit-keyframes NextAnimOut {
+	0% {
+		-webkit-transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateX(50%);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes NextAnimOut {
+	0% {
+		-moz-transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		-moz-transform: translateX(50%);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes NextAnimOut {
+	0% {
+		-ms-transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		-ms-transform: translateX(50%);
+		opacity: 0;
+	}
+}
+
+/**************************************************/
+/*policy card*/
+/**************************************************/
+.ui-vew .card-icon, .ui-vew .list-icon {
+	width: 36px;
+	height: 30px;
+	float: left;
+	background-image: url(../../images/configuration/sprite/policy_home.png);
+}
+
+.ui-vew .card-icon {
+	background-position: 0 -726px;
+}
+
+.ui-vew .card-icon:hover {
+	background-position: 0 -792px;
+}
+
+.ui-vew .card-icon.selected {
+	background-position: 0 -858px;
+}
+
+.ui-vew .list-icon {
+	background-position: 0 -924px;
+}
+
+.ui-vew .list-icon:hover {
+	background-position: 0 -990px;
+}
+
+.ui-vew .list-icon.selected {
+	background-position: 0 -1056px;
+}
+
+.card-list {
+	position: relative;
+	margin: 0 auto;
+}
+
+.card-item-wrap{
+	margin: 0 25px 20px 0px;
+	float: left;
+}
+
+.card-item {
+	background-color: #F7F7F5;
+	width: 390px;
+	z-index: 1000;
+	-webkit-transition: height 1s, -webkit-transform 1s;
+  	transition: height .5s, transform .5s;
+}
+
+.card-item-static{
+	height: 246px;
+	overflow: hidden;
+}
+
+.card-item-wrap:nth-child(3n) {
+	margin-right: 0;
+}
+
+.card-item-first {
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	z-index : 1;
+	-webkit-transition: background .5s;
+	transition: background .5s;
+}
+
+.card-item-first .card-add {
+	position: absolute;
+	left: 162px;
+	top: 65px;
+	width: 66px;
+	height: 66px;
+	background-image: url(../../images/configuration/sprite/policy_home.png);
+	background-repeat: no-repeat;
+	background-position: 0 -132px;
+}
+
+.card-item-first:hover .card-add {
+	background-position: 0 -198px;
+}
+
+.card-item-first:hover .card-text {
+	color: #FAFAF8;
+}
+
+.card-item-first .card-text {
+	position: absolute;
+	width: 100%;
+	bottom: 60px;
+	font-size: 16px;
+	color: #1893D1;
+	vertical-align: middle;
+	text-transform: uppercase;
+	-webkit-transition: color .5s;
+	transition: color .5s;
+}
+
+.card-item-first:hover {
+	background: #0093D1;
+}
+
+/*.card-item-first:only-child {*/
+.card-item-wrap:only-child {
+	margin: 30px auto;
+	float: none;
+	width: 734px;
+	border: 1px solid #DDDCD5;
+}
+
+.card-item-wrap:only-child .card-item-first{
+	width: 734px;
+	height: 498px;
+	background-color: #FFFFFF;
+}
+
+.card-item-wrap:only-child:hover {
+	border: 1px solid #1693D1;
+}
+
+.card-item-wrap:only-child .card-add {
+	left: 282px;
+	top: 100px;
+	width: 171px;
+	height: 196px;
+	background-image: url(../../images/configuration/sprite/add_policy_big.png);
+	background-position: 0 0;
+}
+
+.card-item-wrap:only-child:hover .card-add {
+	background-position: 0 -196px;
+}
+
+.card-item-wrap:only-child .card-text {
+	color: #BDB9AB;
+}
+
+.card-item-wrap:only-child:hover .card-text {
+	color: #1693D1;
+}
+
+.card-item .card-item-title-area {
+	position: relative;
+	height: 42px;
+	background: #ECEBE6;
+	line-height: 42px;
+	padding: 14px 18px;
+}
+
+.card-item .card-item-title-area .card-item-title,
+.card-item .card-item-title-area .card-item-action-edit,
+.card-item .card-item-title-area .card-item-action-view,
+.card-item .card-item-title-area .card-item-action-delete {
+	float: left;
+	background-image: url(../../images/configuration/sprite/policy_home.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+}
+
+.card-item .card-item-title-area .card-item-title {
+	background-position: 0 -264px;
+}
+
+.card-item .card-item-title-area .card-item-title {
+	width: 280px;
+	font-size: 20px;
+	color: #717174;
+	text-indent: 45px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.card-item .card-item-title-area .card-item-action {
+	position: absolute;
+	right: 10px;
+	top: 22px;
+	opacity: 0;
+	-webkit-transition: opacity .5s;
+	transition: opacity .5s;
+	cursor: pointer;
+}
+
+.card-item:hover .card-item-title-area .card-item-action,
+.card-item.expand .card-item-title-area .card-item-action {
+	opacity: 0.7;
+}
+
+.card-item .card-item-title-area .card-item-action-edit {
+	width: 26px;
+	height: 17px;
+	line-height: 42px;
+	background-position: 0 -330px;
+}
+
+.card-item .card-item-title-area .card-item-action-edit:hover {
+	background-position: 0 -396px;
+}
+
+.card-item .card-item-title-area .card-item-action-view {
+	width: 30px;
+	height: 17px;
+	background-position: 0 -461px;
+}
+
+.card-item .card-item-title-area .card-item-action-view:hover {
+	background-position: 0 -526px;
+}
+
+.card-item .card-item-title-area .card-item-action-delete {
+	width: 26px;
+	height: 18px;
+	background-position: 0 -592px;
+}
+
+.card-item .card-item-title-area .card-item-action-delete:hover {
+	background-position: 0 -660px;
+}
+
+.card-item .card-item-content {
+	margin: 16px;
+	font-size: 11px;
+}
+
+.card-item .card-item-content p {
+	margin: 15px 0 5px;
+	color: #717177;
+}
+
+.card-item .card-item-content p span {
+	padding-right: 5px;
+}
+
+.card-item .card-item-content a {
+	color: #0093d1;
+	text-decoration: underline;
+	padding-left: 5px;
+}
+
+.card-item .card-item-content a::after {
+	position: relative;
+	top: 2px;
+	margin-left: 3px;
+	content: '';
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	background-image: url(../../images/configuration/sprite/policy_home.png);
+	background-position: 0 0;
+}
+
+.card-item .card-item-content a:hover::after {
+	background-position: 0 -66px;
+}
+
+.card-item .card-item-content .card-ssid-list,
+.card-item .card-item-content .card-device-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: #7f93a4;
+}
+
+.card-item .card-item-content .card-ssid-list li,
+.card-item .card-item-content .card-device-list li {
+	line-height: 16px;
+	overflow: hidden;
+}
+
+.card-item .card-item-content .card-ssid-list span,
+.card-item .card-item-content .card-device-list span {
+	float: left;
+	overflow : hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.card-item .card-item-content .card-ssid-list span:nth-child(1) {
+	width: 44%;
+}
+
+.card-item .card-item-content .card-ssid-list span:nth-child(2) {
+	width: 40%;
+}
+
+.card-item .card-item-content .card-ssid-list span:nth-child(3) {
+	width: 16%;
+	text-align: center;
+}
+
+.card-item .card-item-content .card-device-list span:nth-child(1) {
+	width: 44%;
+}
+
+.card-item .card-item-content .card-device-list span:nth-child(2) {
+	width: 56%;
+}

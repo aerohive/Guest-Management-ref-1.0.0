@@ -1,0 +1,32 @@
+<div class="rg-content">
+	<div class="ta-c va-m mt30">
+		<h1>${i18n.guestRegistration}</h1>
+		<p class="rg-fs14">${i18n.registerTitle}</p>
+	</div>
+
+	<div class="type-content" data-dojo-attach-point="box">
+		<ul>
+			<li class="rg-w130 fn-left" data-dojo-attach-point="guest" style="display:none;">
+				<span class="img_guest" data-type="guest"></span>
+				<p class="type-name">${i18n.registerGuest}</p>
+			</li>
+			<li class="rg-w130 fn-left" data-dojo-attach-point="group" style="display:none;">
+				<span class="img_group" data-type="group"></span>
+				<p class="type-name">${i18n.registerGroup}</p>
+			</li>
+			<li class="rg-w130 fn-left"  data-dojo-attach-point="kiosk" style="display:none;">
+				<span class="img_kiosk" data-type="kiosk"></span>
+				<p class="type-name">${i18n.registerKiosk}</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="clearfix ta-c">
+		<div class="fn-left rg-fs20  grid_3 rg-lh40 ml80">
+			<a href="javascript:void(0);" data-dojo-attach-point="logOut">${i18n.logOut}</a>
+		</div>
+		<div class="fn-left rg-fs20 grid_3 rg-lh40">
+			<a href="javascript:void(0);" data-dojo-attach-point="viewGuest">${i18n.viewGuest}</a>
+		</div>
+	</div>
+</div>

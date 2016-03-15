@@ -1,0 +1,80 @@
+/*
+ * Desc: ui-button
+ * Author: Xiaoming
+ * Date: 1/16/2015
+ */
+
+.ui-button{
+	display: inline-block;
+	padding: 0 20px;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	color: #FFF;
+	font-size: 13px;
+	font-family: Helvetica;
+	letter-spacing: 1px;
+	-moz-transition: all .1s ease-in-out;
+	-webkit-transition: all .1s ease-in-out;
+	-o-transition: all .1s ease-in-out;
+	-ms-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+	cursor: pointer;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+  	-moz-font-smoothing: antialiased;
+  	font-smoothing:antialiased;
+  	border: none;
+}
+.ui-button-small{
+	font-size: 12px;
+	padding: 0 16px;
+	height: 26px;
+	line-height: 26px;
+}
+.ui-button-gray{
+	background-color: #7E92A3;
+}
+.ui-button-gray:hover{
+	background-color: #4C687F;
+}
+.ui-button-bGray{
+	background-color: #f5f4f2;
+	border: solid 1px #dedcd4;
+	color: #4c687f;
+	font-weight : 500;
+	font-size: 12px;
+}
+.ui-button-bGray:hover{
+	background-color: #dedcd4;
+	color: #002849;
+}
+.ui-button-lBlue{
+	background-color: #7FC9E7;
+}
+.ui-button-lBlue:hover{
+	background-color: #62A3D8;
+}
+.ui-button-dBlue{
+	background-color: #0093D1;
+}
+.ui-button-dBlue:hover{
+	background-color: #166EB7;
+}
+.ui-button-orange{
+	background-color: #f8bf70;
+}
+.ui-button-orange:hover{
+	background-color: #f5a433;
+}
+
+.ui-button:hover{
+	text-decoration : none
+}
+.ui-button:active,
+.ui-button:focus{
+	outline : 0
+}
+.ui-button:last-child{
+	margin-right: 0
+}

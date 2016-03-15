@@ -1,0 +1,80 @@
+<div class="rg-content">
+	<div class="mt10 clearfix rg-w290 rg-mc0">
+		<div class="img-guestTitle fn-left"></div>
+		<div class="ml5 mt5 fn-left">
+			<h2>${i18n.registerGuest}</h2>
+			<p class="rg-fs14">${i18n.enterCredential}</p>
+		</div>
+	</div>
+
+	<div class="pt-r mt10 rg-h240">
+		<div class="guest-chunk fn-left">
+			<div class="guest-label">${i18n.firstName}</div>
+			<input class="guest-input" type="input" ah-permit="name" data-dojo-attach-point="val-firstName" />
+		</div>
+
+		<div class="guest-chunk fn-left">
+			<div class="guest-label">${i18n.lastName}</div>
+			<input class="guest-input" type="input" ah-permit="name" data-dojo-attach-point="val-lastName" />
+		</div>
+
+		<div class="guest-chunk fn-left">
+			<div class="guest-label">${i18n.representing}</div>
+			<input class="guest-input" type="input" ah-permit="name" data-dojo-attach-point="val-representing" />
+		</div>
+
+		<div class="guest-chunk fn-left">
+			<div class="guest-label" data-dojo-attach-point="toVisit">${i18n.hereVisit}</div>
+			<input class="guest-input" type="input" ah-permit="name" data-dojo-attach-point="val-toVisit" />
+		</div>
+
+		<div class="guest-chunk fn-left">
+			<div class="guest-label">${i18n.email}</div>
+			<input class="guest-input" type="input" ah-permit="name" data-dojo-attach-point="val-email" />
+		</div>
+
+		<div class="rg-pl20 fn-left rg-h70">
+				<div class="guest-label">${i18n.phoneNum}</div>
+				<div data-dojo-attach-point="phone">
+					<input data-dojo-attach-point="numArea" class="phone-area" type="text" readonly="true" value="+1"/><input data-dojo-attach-point="phoneNum" class="phone-input"  type="text" />
+				</div>
+
+				<div class="phone-div">
+					<ul class="phone-list" style="display:none;" data-dojo-attach-point="numList">
+						<li data-dojo-attach-point="num-1">&emsp;&ensp;+1 -  United States</li>
+						<li data-dojo-attach-point="num-2">&emsp;&ensp;+1 -  Canada</li>
+						<li data-dojo-attach-point="num-3">&emsp;+31 -  Netherlands</li>
+						<li data-dojo-attach-point="num-4">&emsp;+32 -  Belgium</li>
+						<li data-dojo-attach-point="num-5">&emsp;+33 -  France</li>
+						<li data-dojo-attach-point="num-6">&emsp;+34 -  Spain</li>
+						<li data-dojo-attach-point="num-7">&emsp;+43 -  Austria</li>
+						<li data-dojo-attach-point="num-8">&emsp;+44 -  United Kingdom</li>
+						<li data-dojo-attach-point="num-9">&emsp;+45 -  Denmark</li>
+						<li data-dojo-attach-point="num-10">&emsp;+46 -  Sweden</li>
+						<li data-dojo-attach-point="num-11">&emsp;+49 -  Germany</li>
+						<li data-dojo-attach-point="num-12">&emsp;+52 -  Mexico</li>
+						<li data-dojo-attach-point="num-13">&emsp;+55 -  Brazil</li>
+						<li data-dojo-attach-point="num-14">&emsp;+61 -  Australia</li>
+						<li data-dojo-attach-point="num-15">&emsp;+64 -  New Zealand</li>
+						<li data-dojo-attach-point="num-16">&emsp;+82 -  Korea, Republic Of</li>
+						<li data-dojo-attach-point="num-17">&emsp;+86 -  China</li>
+						<li data-dojo-attach-point="num-18">&emsp;&emsp;&emsp;-  Others</li>
+					</ul>
+				</div>
+		</div>
+	</div>
+
+	<div class="ta-c">
+		<span class="img-next rg-w60 rg-h60" data-dojo-attach-point="next"></span>
+		<p class="rg-fs20 rg-mc0">${i18n.next}</p>
+	</div>
+
+	<div class="ta-l">
+		<span class="img-back rg-w35 rg-h35" data-dojo-attach-point="back"></span>
+		<p class="rg-back">${i18n.back}</p>
+	</div>
+
+</div>
+
+
+

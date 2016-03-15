@@ -1,0 +1,12 @@
+.hiddenMsg {
+    display: none;
+}
+.displayMsg {
+    display: inline-block;
+    color: red;
+}
+.center {
+    position: relative;
+    top: 40%;
+    transform: translateY(-60%);
+}

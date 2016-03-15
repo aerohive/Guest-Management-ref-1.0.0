@@ -1,0 +1,104 @@
+html, body {
+    height: 100%
+}
+
+body {
+    font: 12px helvetica, arial, san-serif;
+    color: #393939;
+    background-color: #fff;
+    line-height: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+img {
+    vertical-align: middle
+}
+
+p {
+    font-size: 1em;
+    margin: 0 0 10px;
+    line-height: 1.4em;
+    color: #717174
+}
+
+strong {
+    color: #000;
+    font-weight: bold;
+}
+
+hr {
+    height: 1px;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #e8e4e1;
+    border-left: none;
+    border-right: none;
+    margin: 10px 0;
+}
+
+a:link {
+    color: #0093d1
+}
+
+a:visited {
+    color: #0093d1
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a:focus, a:active {
+    text-decoration: none
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden
+}
+
+/*
+fixing ie password reveal issue
+*/
+/* don't show the x for text inputs */
+::-ms-clear {
+    width: 0;
+    height: 0;
+}
+
+/* don't show the eye for password inputs */
+::-ms-reveal {
+    width: 0;
+    height: 0;
+}
+
+/*
+fixing ie password reveal issue for IE password field
+*/
+/* don't show the x for text inputs */
+::-ms-clear {
+    width: 0;
+    height: 0;
+}
+
+/* don't show the eye for password inputs */
+::-ms-reveal {
+    width: 0;
+    height: 0;
+}
+
+
+/**********************Container with floating elements***************************/
+
+.group:before, .group:after { content: ""; display: table; }
+.group:after { clear: both; }
+.group { zoom: 1; }

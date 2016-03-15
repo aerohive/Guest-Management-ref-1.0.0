@@ -1,0 +1,556 @@
+/*body{
+	background: url(../../images/background.png) center no-repeat;
+	background-color: black;
+}*/
+.rg-dialog{
+	/*background: url(../../../images/flags/flag_usa.png)  0 0 no-repeat !important;*/
+	background-color: #eee;
+	width: 550px;
+	height: 250px;
+}
+.rg-clear{
+	zoom:1;
+}
+.rg-clear:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+.rg-bg{
+	width:600px;
+	height:475px;
+	background:url(../../images/gmol-main-window.png) center no-repeat;
+}
+.rg-header{
+	height:150px;
+	background:url(../../images/gmol-welcome.png) top center no-repeat;
+}
+.rg-content{
+	margin:0 auto;
+	padding:15px 25px 15px 25px;
+	width:550px;
+	height:445px;
+}
+.rg-back{
+	display:inline-block;
+	height:45px;
+	font-size:20px;
+	vertical-align: middle;
+}
+
+.rg-mc0{
+	margin:0 auto;
+}
+.rg-mc40{
+	margin: 40px auto;
+}
+.rg-ml90{
+	margin-left: 90px;
+}
+.rg-ml130{
+	margin-left: 130px;
+}
+.rg-ml135{
+	margin-left: 135px;
+}
+.rg-ml140{
+	margin-left: 140px;
+}
+.rg-ml150{
+	margin-left: 150px;
+}
+.rg-ml215{
+	margin-left: 215px;
+}
+.rg-ml300{
+	margin-left: 215px;
+}
+.rg-mt70{
+	margin-top: 70px;
+}
+
+
+.rg-lh0{
+	word-break: break-all;
+	line-height: 10px;
+	cursor: pointer;
+	margin-top: 4px;
+}
+.rg-lh30{
+	line-height: 30px;
+}
+.rg-lh40{
+	line-height: 40px;
+}
+
+.rg-pl20{
+	padding-left: 20px;
+}
+.rg-pt30{
+	padding-top: 30px !important;
+}
+
+.rg-w35{
+	width:35px;
+}
+.rg-w60{
+	width:60px;
+}
+.rg-w175{
+	width:175px;
+}
+.rg-w200{
+	width: 200px;
+}
+.rg-w270{
+	width:270px;
+}
+.rg-w290{
+	width: 290px;
+}
+.rg-w540{
+	width:540px;
+}
+.rg-w750{
+	width:750px;
+}
+
+.rg-h35{
+	height:35px !important;
+}
+.rg-h60{
+	height:60px;
+}
+.rg-h70{
+	height:70px;
+}
+.rg-h83{
+	height: 83px !important;
+}
+.rg-h100{
+	height: 100px;
+}
+.rg-h130{
+	height: 130px;
+}
+.rg-h148{
+	height: 148px;
+}
+.rg-h150{
+	height: 150px;
+}
+.rg-h200{
+	height: 200px;
+}
+.rg-h216{
+	height: 216px;
+}
+.rg-h240{
+	height: 240px;
+}
+.rg-h246{
+	height: 246px;
+}
+
+.rg-fs14{
+	font-size: 14px;
+}
+.rg-fs18{
+	font-size: 18px;
+}
+.rg-fs20{
+	font-size: 20px;
+}
+
+.rg-lh27{
+	line-height: 27px;
+}
+
+.rg-overflow{
+	overflow-y:hidden;
+}
+
+/*for login*/
+.lg-margin{
+	margin: 30px 100px 10px;
+}
+.lg-input{
+	font-size:30px;
+	border-radius:10px;
+}
+.lg-label{
+	padding-top:5px;
+	width:350px;
+	color:#03070e;
+	font-size: 25px;
+	line-height:35px;
+}
+
+/*for dialog */
+.dlog-bg{
+	background-color: #eee;
+}
+.dlog-label{
+	font-size: 18px;
+	padding-top: 10px 0 5px;
+}
+.dlog-padding{
+	padding: 20px 35px 0px;
+}
+.dlog-bottom{
+	padding: 0px 35px 15px;
+}
+
+/*for carousel*/
+.carousel-box{
+
+}
+.carousel-w{
+	width:275px;
+}
+.carousel-img{
+	width: 60px;
+	height: 83px;
+	line-height: 0;
+}
+.carousel-type{
+	background: url(../../images/gmol-guesttype.png);
+	display: inline-block;
+	height: 60px;
+}
+.carousel-type:hover{
+    background-position-x: -70px;
+    cursor: pointer;
+}
+.carousel-type-vendor{
+	width: 60px;
+	background-position:0 0;
+}
+.carousel-type-visitor{
+	width: 60px;
+	background-position: 0 -75px;
+}
+.carousel-type-wired{
+	width: 60px;
+	background-position: 0 -150px;
+}
+.carousel-type-wireless{
+	width: 60px;
+	background-position: 0 -225px;
+}
+
+.type-content{
+	width: 400px;
+	height: 216px;
+	position: relative;
+	margin:52px auto;
+}
+.type-name{
+	margin: 10px auto;
+	margin-left: 10px;
+	font-size: 20px;
+	text-align:center;
+	font-weight: bold;
+	color: #393939;
+}
+
+.group-file{
+	background:url(../../images/editpad.png) no-repeat;
+	width: 60px;
+	height: 60px;
+}
+
+
+
+/*img*/
+.laptop, .phone, .twitter{
+	width: 110px;
+	height: 110px;
+}
+.laptop{
+	background:url(../../images/gmol-button-laptop.png) no-repeat;
+}
+.phone{
+	background:url(../../images/gmol-button-phone.png) no-repeat;
+}
+.twitter{
+	background:url(../../images/gmol-button-twitter.png) no-repeat;
+}
+
+.img-bottom{
+	width:270px;
+	background-image:url(../../images/company_logo.png);
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+.img-guestTitle{
+	background:url(../../images/gmol-guesttype1.png) no-repeat;
+	width: 60px;
+	height: 60px;
+}
+.img-groupTitle{
+	background:url(../../images/group-small.png) no-repeat;
+	width: 46px;
+	height: 46px;
+}
+.img-next{
+	display: inline-block;
+	background: url(../../images/login.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.img-back{
+	display: inline-block;
+	background: url(../../images/loginout.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+/*for international*/
+.img-international{
+	width: 40px;
+	height: 32px;
+	display: inline-block;
+	background: url(../../images/flags/flag_usa.png)  0 0 no-repeat;
+	cursor: pointer;
+}
+
+.img_guest, .img_group, .img_kiosk, .img_phone, .img_laptop, .img_printer, .img_twitter{
+	display: inline-block;
+	width:110px;
+	height:110px;
+	cursor: pointer;
+}
+.img_guest{
+	margin:10px 40px;
+	background:url(../../images/gmol-button-singleguest.png);
+}
+.img_group{
+	margin:10px 5px 10px 30px;
+	background:url(../../images/group.png);
+}
+.img_kiosk{
+	margin:10px 25px;
+	background:url(../../images/kiosk.png);
+}
+.img_phone{
+	background:url(../../images/phone.png) 0 0 no-repeat;
+}
+.img_laptop{
+	background:url(../../images/laptop.png) 0 0 no-repeat;
+}
+.img_printer{
+	margin-left:20px;
+	background:url(../../images/printer.png) 0 0 no-repeat;
+}
+.img_twitter{
+	margin-left:20px;
+	background:url(../../images/twitter.png) 0 0 no-repeat;
+}
+
+
+
+/*for guest*/
+.guest-chunk{
+	width: 235px;
+	height: 80px;
+	padding: 0 20px 0;
+}
+.guest-label{
+	font-size: 18px;
+	padding: 0 0 3px 5px;
+}
+.guest-input{
+	width:240px;
+	height:30px  !important;
+	border-radius:10px;
+	font-size:21px !important;
+	color:#7d7d7d;
+	border: none;
+	outline:none;;
+	/*margin-bottom: 5px;*/
+	padding:5px;
+}
+.guest-error{
+	width: 245px;
+	height: 20px;
+	color: #C84B00;
+	font-size: 14px;
+	text-align: right;
+}
+.guest-confirm{
+	width:255px;
+	height:56px;
+	font-size:21px;
+	color:#7d7d7d;
+	padding-left:5px;
+	word-wrap: break-word;
+	overflow:hidden;
+}
+
+.guest-name, .guest-value {
+	font-size: 25px;
+	line-height:35px;
+	color: #444444;
+}
+.guest-name{
+	/*width:300px;*/
+	width:166px;
+}
+.guest-value {
+	/*width:220px;*/
+	width:383px;
+	font-weight: bold;
+}
+.guest-note {
+	width: 550px;
+	height: 25px;
+	font-size: 20px;
+	color: #BB5500;
+}
+
+/*follow css for phone input*/
+.phone-div{
+	width:246px;
+	height:120px;
+}
+.phone-list{
+	z-index: 10;
+	height:160px;
+	border:1px solid black;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: #fff
+}
+.phone-list li{
+	margin:2px;
+	height:30px;
+	line-height: 30px;
+	vertical-align: middle;
+	font-size:14px;
+	width: 248px;
+}
+.phone-list li:hover{
+	background: #eeeeee;
+	cursor: pointer;
+}
+.phone-area{
+	width:60px;
+	height:30px !important;
+	border-radius: 10px 0 0 10px;
+	text-align:center;
+	font-size: 21px !important;
+	background: #eeeeee !important;
+}
+.phone-input{
+	width:160px;
+	height:30px !important;
+	border-radius:0 10px 10px 0;
+	font-size: 21px !important;
+}
+
+.international-ul li{
+	float: left;
+	margin: 0 0 25px;
+	padding-left: 15px;
+	width: 140px !important;
+	cursor: pointer;
+}
+
+.international-label{
+	display: inline-block;
+	margin-left: 10px;
+	width: 50px;
+	text-align: center;
+}
+.img_china, .img_usa, .img_france, .img_deutsch, .img_spain, .img_pirate, .img_brazil, .img_kingdom{
+	display: inline-block;
+	width: 45px;
+	height: 36px;
+}
+.img_china{
+	background: url(../../images/flags/flag_china.png);
+}
+.img_usa{
+	background: url(../../images/flags/flag_usa.png);
+}
+.img_france{
+	background: url(../../images/flags/flag_france.png);
+}
+.img_deutsch{
+	background: url(../../images/flags/flag_deutsch.png);
+}
+.img_spain{
+	background: url(../../images/flags/flag_spain.png);
+}
+.img_pirate{
+	background: url(../../images/flags/flag_pirate.png);
+}
+.img_brazil{
+	background: url(../../images/flags/flag_brazil.png);
+}
+.img_kingdom{
+	background: url(../../images/flags/flag_united_kingdom.png);
+}
+
+/*for international*/
+.language-select{
+	color: #6f6f6f;
+	font-size: 20px;
+	cursor: pointer;
+}
+.language-select-item span {
+	display: inline-block;
+}
+
+.language-ul li{
+	float: left;
+	margin: 0 0 25px;
+	padding-left: 15px;
+	width: 140px !important;
+	cursor: pointer;
+}
+
+.language-label{
+	display: inline-block !important;
+	margin-left: 10px;
+	width: 50px;
+	text-align: center;
+}
+.img_zh-cn, .img_en-us, .img_fr-fr, .img_de-de, .img_es-es, .img_pirate, .img_pt-br, .img_en-gb{
+	display: inline-block;
+	width: 45px;
+	height: 36px;
+	cursor: pointer;
+}
+.img_zh-cn{
+	background: url(../../images/flags/flag_china.png);
+}
+.img_en-us{
+	background: url(../../images/flags/flag_usa.png);
+}
+.img_fr-fr{
+	background: url(../../images/flags/flag_france.png);
+}
+.img_de-de{
+	background: url(../../images/flags/flag_deutsch.png);
+}
+.img_es-es{
+	background: url(../../images/flags/flag_spain.png);
+}
+.img_pirate{
+	background: url(../../images/flags/flag_pirate.png);
+}
+.img_pt-br{
+	background: url(../../images/flags/flag_brazil.png);
+}
+.img_en-gb{
+	background: url(../../images/flags/flag_united_kingdom.png);
+}
+.img-close{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: url(../../images/flags/gmol-popup-close.png);
+	margin-left: 460px;
+	cursor: pointer;
+}
+

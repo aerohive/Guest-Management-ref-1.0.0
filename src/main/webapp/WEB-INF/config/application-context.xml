@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd 
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+    <!-- To include the common service configuration. -->
+    <context:property-placeholder location="classpath:guestmgmt-ref-application.properties,file:/aerohive_app/etc/guestmgmt-ref-application.properties,file:///C:/guestmgmt-ref-application.properties"  ignore-resource-not-found="true" ignore-unresolvable="true"/>
+    
+ 
+    <import resource="guestmgmt-ref-servlet.xml" />
+ 
+</beans>

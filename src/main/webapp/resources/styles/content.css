@@ -1,0 +1,280 @@
+/**Filter from ace.min.css and would delete ace.min.css**/
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal
+}
+
+h1 {
+	font-size: 32px
+}
+
+h2 {
+	font-size: 25px
+}
+
+h3 {
+	font-size: 22px
+}
+
+h4 {
+	font-size: 18px
+}
+
+h5 {
+	font-size: 15px
+}
+
+h6 {
+	font-size: 13px
+}
+
+
+
+.inline {
+	display: inline-block !important
+}
+
+.collapse {
+	background-color: #FFF
+}
+
+
+.radio [type=checkbox]+label,.checkbox [type=radio]+label {
+	float: left;
+	margin-left: -20px
+}
+
+
+
+/*****Begin from content.css******/
+
+h5 {
+	position: relative;
+	letter-spacing:0.5px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+
+h4{
+	font-size: 16px;
+	padding: 0 0;
+	font-weight: bold;
+}
+
+h5.one {
+	text-indent: 0px;
+}
+
+h5.ssid {
+	margin-bottom: 20px;
+}
+
+h5.one:before {
+	content: "";
+	display: block;
+	border-top: solid 1px lightgrey;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	left: 0px;
+}
+
+h5.one span {
+	background: #fff;
+	padding-left: 6px;
+	padding-right: 6px;
+	position: relative;
+	z-index: 5;
+}
+
+
+
+.control-label{
+	color: #666;	
+}
+
+/*====================================usermanagement\AdminGroupPermissionsTree.html*/
+/*
+.ipfirewall-title1 {
+	color: #000;
+}
+*/
+
+/*=====================================Homepage.html*/
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	*zoom: 1;
+}
+
+/* No needed
+.homepage-ssid-list {
+	width: 200px;
+}
+
+.homepage-guesttypes-list {
+	width: 200px;
+}
+.homepage-guesttypes-list li {
+	line-height: 30px;
+}
+
+.homepage-ssid-list li {
+	line-height: 30px;
+}
+
+.homepage-ssid-list li a {
+	float: right;
+	font-weight: bold;
+}
+.homepage-delegate-list {
+	width: 200px;
+}
+
+.homepage-delegate-list li {
+	line-height: 30px;
+}
+
+.homepage-delegate-list .float-right {
+	float: right;
+}
+
+.homepage-delegate-list .action {
+	margin-left: 10px;
+}
+*/
+
+
+.ah-identity-icons {
+	background: url(../images/ah-identity-icons.png) no-repeat top left;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ah-bg-pointer {
+	background-position: 0 -95px;
+	width: 7px;
+	height: 9px;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+.ah-bg-pointer:hover {
+	background-position: 0 -154px;
+}
+.ah-icon-Manage-guest {
+	background-position: 0 -1583px;
+	width: 112px;
+	height: 70px;
+	margin: -60px 94px 20px 94px;
+	position: relative;
+}
+
+
+/*  no needed
+.homepage-menu-item {
+	display: inline-block;
+	padding: 0 20px 8px 20px;
+	position: relative;
+}
+
+.homepage-menu-item a:link {
+	color: #8894a8;
+}
+
+.homepage-menu-item a:hover {
+	color: #ffa10e;
+}
+
+.homepage-menu-item.current {
+	border-bottom: 4px solid #ffa10e;
+	color: #ffa10e;
+}
+
+.homepage-menu-item.current:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 22px;
+	left: 45%;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid #ffa10e;
+}
+*/
+
+
+
+.ah-icon-delegate {
+	background-position: 0 -1888px;
+	width: 70px;
+	height: 70px;
+	margin: -60px 115px 20px 115px;
+	position: relative;
+}
+
+.ah-icon-group {
+	background-position: -519px -64px;
+	width: 21px;
+	height: 13px;
+	margin: -8px 10px 0 0;
+}
+
+.ah-icon-group:hover {
+	background-position: -519px -127px;
+	width: 21px;
+	height: 13px;
+	margin: -8px 10px 0 0;
+}
+
+.ah-icon-info {
+	background-position: -519px -624px;
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.ah-icon-info:hover {
+	background-position: -519px -688px;
+}
+
+.ah-icon-issue {
+	background-position: -519px -752px;
+	width: 15px;
+	height: 12px;
+	vertical-align: -1px;
+	margin-left: 5px;
+}
+
+.ah-icon-user {
+	background-position: -519px -1138px;
+	width: 12px;
+	height: 12px;
+	margin: -8px 10px 0 0;
+}
+
+
+.error {
+	font-style: italic;
+	color: red;
+}
+
+
+/*===============overriding ace-min================== */
+.widget-header {
+	text-align: left;
+}
+
+.header-color-lightgrey {
+	background: #F8F8F6;
+	border-color: #F8F8F6;
+}
+
+.header-color-lightgrey+.widget-body {
+	border-color: #aaa;
+}
